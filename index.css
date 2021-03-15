@@ -1,0 +1,86 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-container {
+  width: 90vw;
+  height: 500px;
+  
+  background-color: pink;
+  animation-name: bgcolor;
+  animation-duration: 7s;
+  animation-iteration-count: 90;
+  overflow: hidden;
+  position: relative;
+}
+@keyframes bgcolor {
+  0%   {background-color: pink;}
+  25%  {background-color: yellow;}
+  50%  {background-color: cyan;}
+  100% {background-color: black;}
+}
+
+.card {
+  width: 240px;
+  height: 300px;
+  border-radius: 20%;
+  background-color: #2d9140;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: -6px 8px 8px white;
+}
+.card :hover{
+       width: 260px;
+  height: 310px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.controlles {
+  margin-top: 20px;
+}
+
+.controlles button {
+  outline: none;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-weight: 5vw;
+  border-radius: 50%;
+}
+
+.controlles button:hover {
+  background-color: #2d9140;
+  color: white;
+}
+
+#leftbutton{
+  transform: translate(0vw,-14vh);
+}
+#rightbutton{
+  transform: translate(0vw,-14vh);
+}
+/*# sourceMappingURL=index.css.map */
